@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.unblock.my.id' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
 
@@ -14,23 +14,23 @@ settings:
   dayInHistogramNotOperational: 'Some checks failed'
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: nhentai
+    name: nhentai Mirror
+    description: 'nHentai Mirror.'
+    url: 'https://nhentai.unblock.my.id/'
     method: GET
     expectStatus: 200
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: hentaicafe
+    name: Hentai Cafe Mirror
+    description: 'Hentai Cafe Mirror.'
+    url: 'https://hentaicafe.unblock.my.id'
+    method: GET
+    expectStatus: 200
+
+  - id: ehentai
+    name: e-hentai Mirror
+    desc: 'E-Hentai Mirror'
+    url: 'https://e-hentai.unblock.my.id/'
     method: GET
     expectStatus: 200
