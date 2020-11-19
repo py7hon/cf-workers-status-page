@@ -1,5 +1,5 @@
 settings:
-  title: 'Status Page'
+  title: 'Mirror Status Page'
   url: 'https://status.unblock.my.id' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -14,23 +14,23 @@ settings:
   dayInHistogramNotOperational: 'Some checks failed'
 
 monitors:
-  - id: nhentai
-    name: nhentai Mirror
+  - id: nhentai.unblock.my.id
+    name: nHentai
     description: 'nHentai Mirror.'
     url: 'https://nhentai.unblock.my.id/'
     method: GET
     expectStatus: 200
 
-  - id: hentaicafe
-    name: Hentai Cafe Mirror
+  - id: hentaicafe.unblock.my.id
+    name: Hentai Cafe
     description: 'Hentai Cafe Mirror.'
-    url: 'https://hentaicafe.unblock.my.id'
+    url: 'https://hentaicafe.unblock.my.id/'
     method: GET
     expectStatus: 200
 
-  - id: ehentai
-    name: e-hentai Mirror
-    desc: 'E-Hentai Mirror'
+  - id: e-hentai.unblock.my.id
+    name: E-hentai
+    description: 'E-Hentai Mirror'
     url: 'https://e-hentai.unblock.my.id/'
     method: GET
     expectStatus: 200
