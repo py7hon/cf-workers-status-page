@@ -34,3 +34,10 @@ monitors:
     url: 'https://e-hentai.unblock.my.id/'
     method: GET
     expectStatus: 200
+    
+  - id: nekopoi.unblock.my.id
+    name: Nekopoi
+    description: 'Nekopoi Mirror'
+    url: 'https://nekopoi.unblock.my.id/'
+    method: GET
+    expectStatus: 200
